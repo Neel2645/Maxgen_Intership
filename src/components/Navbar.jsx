@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className='text-xl space-x-3 my-auto '>
           <i class="fa-solid fa-circle-user hover:text-amber-600"></i>
           <i class="fa-solid fa-magnifying-glass hover:text-amber-600"></i>
-          <i class="fa-solid fa-cart-shopping hover:text-amber-600"></i>
+          <Link to="/cart"><i class="fa-solid fa-cart-shopping hover:text-amber-600"></i></Link>
       </div>
     </nav>
   )

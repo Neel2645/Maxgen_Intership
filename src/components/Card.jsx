@@ -1,6 +1,8 @@
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "./CartContext";
 
 const Card = ({ item }) => {
+  const { addToCart } = useCart();
   return (
     <div className="w-full max-w-xs bg-gray-50 border border-gray-200 overflow-hidden shadow-md relative hover:bg-gray-100">
       <div className="p-4 flex justify-center">
@@ -30,7 +32,10 @@ const Card = ({ item }) => {
       </div>
 
       <div>
-        <button className="w-full flex items-center justify-center gap-2 border border-orange-500 text-orange-500 hover:bg-orange-200  py-2 text-sm font-medium">
+        <button
+          onClick={() => addToCart(item)}
+          className="w-full flex items-center justify-center gap-2 border border-orange-500 text-orange-500 hover:bg-orange-200  py-2 text-sm font-medium"
+        >
           Add to cart <ShoppingCart size={16} />
         </button>
       </div>
