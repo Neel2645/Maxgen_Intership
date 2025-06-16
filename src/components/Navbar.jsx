@@ -5,7 +5,7 @@ import { useCart } from './CartContext'
 const Navbar = () => {
   const {cartItems} = useCart();
   return (
-    <nav className="bg-[#ffffff] fixed z-1000 w-full text-shadow-orange-300 flex px-12  justify-between border-b-amber-600 border-b-4">
+    <nav className="bg-[#ffffff] fixed z-1000  w-full text-shadow-orange-300 flex px-12  justify-between border-b-amber-600 border-b-4">
       <div>
         <img src={logo} height={80} className='py-4 px-3 ' width={180} alt='logo'/>
       </div>
