@@ -5,6 +5,7 @@ import AboutUs from './Pages/AboutUs'
 import ContactUs from './Pages/ContactUs'
 import Footer from './components/Footer'
 import Cart from './Pages/Cart'
+import Todos from './Pages/Todos'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs/>} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/todos" element={<Todos/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
