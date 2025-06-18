@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className="space-x-10 my-auto text-xl">
         <Link to="/" className="hover:text-amber-600">Home</Link>
-        <Link to="/aboutus" className="hover:text-amber-600">About Us</Link>
+        <Link to="/axios" className="hover:text-amber-600">Axios</Link>
         <Link to="/contactus" className="hover:text-amber-600">Contact Us</Link>
         <Link to="/todos" className="hover:text-amber-600">TODOS</Link>
       </div>
